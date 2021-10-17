@@ -1,5 +1,5 @@
 
-<div id="tag">
+<div id="tag" >
   <h1><%=page.tag%></h1>
   <% page.posts.each(article => { %>
     <div class="tag-item">
@@ -12,7 +12,18 @@
     </div>
   <% }) %>
 </div>
+
+<div class='footer'>
 <div style="border-bottom: 1px solid #000"></div>
 <div id="paginator">
   <%-paginator()%>
 </div>
+</div>
+
+<div id="bottom-outer">
+  <div id="bottom-inner" style=" position: absolute; bottom: 0; width: 99%;">
+    <div style="margin-left: 43%;">
+  © 2018-present Colt
+    </div>
+  </div>
+  </div>

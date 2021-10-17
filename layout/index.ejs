@@ -1,15 +1,28 @@
+<div class='header'>
 <h1 style="margin-left: 200px; margin-right: 200px; color: black;">ColtBlog</h1>
 
 <div style="border-bottom: 1px solid #000"></div>
-
+</div>
+<div class='middle_outer'>
+  <div class='middle_inner'>
 <div style="margin-left: 200px; margin-right: 200px;">
 
 <%-partial('partials/recent-posts')%>
 
 </div>
+  </div>
+</div>
 
+<div class='footer'>
 <div style="border-top: 1px solid #000; padding-bottom: 20px; display: block"></div>
-
 <div id="paginator">
   <%-paginator()%>
 </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner" style=" position: absolute; bottom: 0; width: 99%;">
+    <div style="margin-left: 43%;">
+  © 2018-present Colt
+    </div>
+  </div>
+  </div>

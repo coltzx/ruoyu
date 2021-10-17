@@ -1,6 +1,6 @@
 body
   height: 100%
-  background-color: #F2F2F0
+  background-color: #fff
   font-display: swap // @stylint ignore
   font-weight: 200
   font-size: 20px
@@ -8,13 +8,13 @@ body
 
 
   a
-    color: PaleVioletRed
+    color: #0000CD
     text-decoration: none
 
   
 
     &:hover
-      color: MediumVioletRed
+      color: #1E90FF
       //background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
 
 h1 
@@ -42,3 +42,15 @@ h1:hover
 
 //   code
 //     hyphens(manual)
+
+.footer {
+	position: absolute;
+	bottom: 20px;
+  width: 99%; /*宽度是必要，如果没有宽度就无法撑出div*/
+}
+
+.footer1 {
+	position: absolute;
+	bottom: 0px;
+  width: 99%; /*宽度是必要，如果没有宽度就无法撑出div*/
+}

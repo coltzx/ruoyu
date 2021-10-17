@@ -6,9 +6,10 @@ const archivesList = list_archives({ show_count: false });
 %>
 
 <% if (is_year() === false) { %>
-  <div id="archive">
+  <h1 style="margin-left: 200px;">Archives</h1>
+  <div style="border-bottom: 1px solid #000"></div>
 
-    <h1>Archives</h1>
+  <div id="archive" style="margin-left: 200px; margin-top: -50px;">
 
     <% if (theme.atom !== undefined) { %>
       <p>
@@ -23,7 +24,7 @@ const archivesList = list_archives({ show_count: false });
     <br>
     
     <aside>
-      <h2>Tags</h2>
+      <h3>Tags</h3>
       <% if (tagsList !== "") { %>
         <%-tagsList%>
       <% } else { %>
@@ -33,7 +34,7 @@ const archivesList = list_archives({ show_count: false });
     <br>
 
     <aside>
-      <h2>Archives</h2>
+      <h3>Archives</h3>
       <% if (archivesList !== "") { %>
         <%-archivesList%>
       <% } else { %>
@@ -56,9 +57,18 @@ const archivesList = list_archives({ show_count: false });
       </time>
     </div>
   <% }) %>
-
+  <div class='footer1' >
+    <div style="border-top: 1px solid #000; padding-bottom: 20px; display: block"></div>
   <div id="paginator">
     <%-paginator()%>
   </div>
+</div>
 
+<div id="bottom-outer">
+  <div id="bottom-inner" style=" position: absolute; bottom: 0; width: 99%;">
+    <div style="margin-left: 43%;">
+  © 2018-present Colt
+    </div>
+  </div>
+  </div>
 <% } %>
